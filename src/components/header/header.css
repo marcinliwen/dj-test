@@ -1,0 +1,66 @@
+.page-title{
+    font-size: 16px;
+    line-height: 24px;
+    text-transform: uppercase;
+    letter-spacing: 0.4em;
+    text-align: center;
+
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    margin-top: 32px;
+    padding-right: 45px;
+    padding-left: 45px;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+.menu-burger span {
+    display: block;
+    width: 30px;
+    height: 1px;
+    background: #fff;
+    margin: 10px 0;
+    margin-left: auto;
+}
+
+.menu-burger {
+    overflow: hidden;
+    margin-top: -10px;
+    margin-bottom: -10px;
+    cursor: pointer;
+    margin-right: auto;
+    margin-left: -30px;
+    position: absolute;
+    left: 30px;
+    top: 0;
+}
+
+.menu-burger span:nth-child(2) {
+    width: 60px;
+    background: #C2A353;
+}
+
+
+@media (min-width: 992px){
+    .menu-burger {
+        overflow: hidden;
+        margin-top: -10px;
+        margin-bottom: -10px;
+        cursor: pointer;
+        margin-right: auto;
+        margin-left: -45px;
+        position: absolute;
+        left: 45px;
+        top: 0;
+    }
+    
+    .menu-burger span:nth-child(2) {
+        width: 75px;
+        background: #C2A353;
+    }
+}

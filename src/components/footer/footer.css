@@ -1,0 +1,12 @@
+footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.footer-copyright{
+    font-size: 12px;
+    line-height: 17px;
+    width: 100%;
+    text-align: center;
+    margin: 32px 0 93px;
+}

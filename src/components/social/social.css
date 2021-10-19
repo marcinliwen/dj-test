@@ -1,0 +1,31 @@
+.social svg path {
+    fill: #fff;
+}
+.social svg{
+    width: 20px;
+    height: 20px;
+}
+.social {
+    gap: 25px;
+    align-items: center;
+    position: absolute;
+    right: 45px;
+    display: none;
+}
+
+footer .social{
+    display: flex;
+    margin-bottom: 41px;
+    margin-top: 32px;
+    position: static;
+}
+.social a {
+    display: block;
+    height: 20px;
+    cursor: pointer;
+}
+@media (min-width: 992px){
+    .social{
+        display: flex;
+    }
+}
