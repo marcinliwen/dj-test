@@ -6,7 +6,8 @@ import Hero  from "../components/hero";
 import Contactform from '../components/contactform'
 import { StaticImage } from "gatsby-plugin-image";
 import Mouse from "../assets/Mouse.svg"
-import Arrow from '../assets/Arrow1.svg'
+import Arrow from '../assets/Arrow1.svg';
+import Play from "../assets/Play.svg"
 
 // markup
 const IndexPage = () => {
@@ -50,8 +51,29 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
           </p>
           <a><Arrow /> <span>sprawdź ofertę</span></a>
         </div>
-       
       </section>
+      <section id="films" className="films-wrapper">
+        <div className="film">
+        <StaticImage 
+          src='../images/home-film.png'
+          alt="film z imprezy"
+          placeholder="blurred"
+          layout="fullWidth"
+          
+          />  
+        </div>
+        <div className="films-desc">
+          <div className="films-title">
+            <h2>Zobacz <br/>jak pracujemy</h2>
+            <h3 className="line-before">film z imprezy</h3>
+          </div>
+          <button className="play-film line-after">
+            <Play className="icon-gold"/>
+            <span>odtwórz film</span>
+          </button>
+        </div>
+      </section>
+
      
     <Contactform />
     </Layout>
