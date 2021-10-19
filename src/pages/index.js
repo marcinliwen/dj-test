@@ -6,6 +6,7 @@ import Hero  from "../components/hero";
 import Contactform from '../components/contactform'
 import { StaticImage } from "gatsby-plugin-image";
 import Mouse from "../assets/Mouse.svg"
+import Arrow from '../assets/Arrow1.svg'
 
 // markup
 const IndexPage = () => {
@@ -28,10 +29,30 @@ const IndexPage = () => {
           <button className="line-after"><Mouse fill="#C2A353"/> <span>Dowiedz się więcej</span></button>
         </div>
       </Hero>
-      
-      <p>Lorem Ipsum jest tekstem stosowanym jako przykładowy wypełniacz w przemyśle poligraficznym.
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      <section id="about" className="home-about">
+        <div className="about-img">
+        <StaticImage 
+          src='../images/home-about.png'
+          alt="O mnier"
+          placeholder="blurred"
+          layout="fullWidth"
+          className="home-about-img"
+          />  
+        </div>
+        <div className="about-text">
+          <h2>O mnie</h2>
+          <Arrow className="arrow-down icon-white arrow-sub-title" />
+          <p>
+          Lorem Ipsum jest tekstem stosowanym jako przykładowy wypełniacz w przemyśle poligraficznym.
+          </p>
+          <p>
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          </p>
+          <a><Arrow /> <span>sprawdź ofertę</span></a>
+        </div>
+       
+      </section>
+     
     <Contactform />
     </Layout>
   )

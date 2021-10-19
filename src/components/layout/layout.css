@@ -79,6 +79,70 @@ button{
     top: 50%;
     transform: translateY(50%);
 }
+
+.home-about{
+    padding: 0 30px;
+    position: relative;
+}
+.arrow-down {
+    transform: rotate(90deg);
+}
+.icon-white path{
+    fill: #fff
+}
+.arrow-sub-title{
+    margin-top: 40px;
+    margin-bottom: 65px;
+}
+.about-text button {
+    color: #000;
+    font-size: 13px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-top: 100px;
+    margin-bottom: 51px;
+}
+.about-text a {
+    color: #000;
+    font-size: 13px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-top: 100px;
+    margin-bottom: 51px;
+    display: flex;
+    height: 18px;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+    margin-left: auto;
+}
+.about-text a svg {
+    position: absolute;
+    left: -30px;
+}
+.about-text a:before {
+    content: '';
+    position: absolute;
+    right: calc(100% + 68px);
+    width: 2000px;
+    height: 1px;
+    background: #fff;
+}
+.about-text{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+.about-text:after {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    top: 27px;
+    bottom: 0;
+    left: -45px;
+    right: -45px;
+    background: #C2A353;
+}
 @media(min-width: 992px){
     .line-before:after{
         width: 29px;
@@ -86,5 +150,38 @@ button{
     }
     h2, h3{
         font-size: 40px;
+    }
+    .about-text {
+        padding-top: 111px;
+        padding-left: 68px;
+        padding-right: 45px;
+    }
+    .about-img{
+        width: 67%;
+        max-width: 892px;
+        flex: 0 0 67%
+    }
+    .home-about{
+        padding: 0 45px;
+        margin-top: -191px;
+        display: flex;
+        position: relative;
+        z-index: 1;
+    }
+    .home-about:after {
+        content: '';
+        position: absolute;
+        z-index: -1;
+        width: 54%;
+        top: 136px;
+        bottom: 0;
+        right: 45px;
+        background: #C2A353;
+    }
+    .about-text a {
+        margin-left: 0;
+    }
+    .about-text:after {
+        display: none;
     }
 }
