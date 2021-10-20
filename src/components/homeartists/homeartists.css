@@ -14,6 +14,10 @@ ul.slick-dots {
     color: #464646;
     opacity: 1;
     position: relative;
+    width: 40px;
+    height: 56px;
+    padding: 18px 0;
+    line-height: 56px;
 }
 
 
@@ -27,10 +31,11 @@ ul.slick-dots {
 .slick-dots li button:before {
     color: #464646;
     opacity: 1;
+    height: 56px;
+    line-height: 56px;
 }
 
 .slick-dots li {
-    padding: 18px 0;
     display: block;
     background: #000;
     height: initial;
