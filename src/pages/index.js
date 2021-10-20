@@ -3,6 +3,7 @@ import { graphql } from 'gatsby'
 import Layout from '../components/layout';
 import Header from '../components/header';
 import Hero  from "../components/hero";
+import HomeArtists  from "../components/homeartists";
 import Contactform from '../components/contactform'
 import { StaticImage } from "gatsby-plugin-image";
 import Mouse from "../assets/Mouse.svg"
@@ -74,28 +75,12 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
         </div>
       </section>
       <section id="artists" className="artists" >
-        <div className="artists-item">
-          <div className="artists-img">
-            <StaticImage 
-              src='../images/home-artist.png'
-              alt="Nasi artyści"
-              placeholder="blurred"
-              layout="fullWidth"
-            />  
-          </div>       
-          <div className="artists-desc">
-            <h3>Joanna Kowalska</h3>
-            <span className="sub-title">Wokalistka</span>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-            <a className="section-more"><Arrow className="icon-white"/> <span className='sub-title'>poznaj naszych artystów</span></a>
-
-          </div>
-
-        </div>        
+        <HomeArtists />
         <div className="artists-title">
           <h2>Artyści</h2>
         </div>
-        
+        <a className="section-more"><Arrow className="icon-white"/> <span className='sub-title'>poznaj naszych artystów</span></a>
+
       </section>
      
     <Contactform />
