@@ -2,8 +2,7 @@ ul.slick-dots {
     right: -24px;
     top: 0;
     width: 20px;
-    height: 100%;
-    bottom: 0;
+    bottom: 45px;
     display: flex!important;
     flex-direction: column;
     align-items: center;
@@ -57,6 +56,7 @@ ul.slick-dots {
 }
 @media(min-width: 992px){
     .slick-dots{
-        right: 0s;
+        right: 0px;
+        bottom: 0px;
     }
 }
