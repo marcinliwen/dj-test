@@ -1,10 +1,13 @@
 import React from "react"
-import './navbar.css'
+import { Link } from "gatsby";
+import './navbar.css';
+
+
 export default function Navbar() {
   return (
     <nav>
         <ul>
-        <li><a>O MNIE</a></li>           
+        <li><Link to="/o-mnie">O MNIE</Link></li>           
         <li><a>ARTYŚCI</a></li>          
         <li><a>OFERTA</a></li>           
         <li><a>ATRAKCJE</a></li>           

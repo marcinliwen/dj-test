@@ -1,5 +1,6 @@
 import React from "react"
 import './header.css'
+import { Link } from "gatsby";
 import Social from '../social'
 
 export default function Header( {pageName, heroImg} ) {
@@ -10,7 +11,7 @@ export default function Header( {pageName, heroImg} ) {
           <span></span>
           <span></span>
       </div>
-      <div className="page-title">Piotr <span className="color-second">Szymański</span></div>
+      <Link to ="/" className="page-title">Piotr <span className="color-second">Szymański</span></Link>
       <Social />
     </header>
   )
