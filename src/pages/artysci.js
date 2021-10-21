@@ -13,7 +13,7 @@ import Play from "../assets/Play.svg";
 const Artysci = () => {
   return (
     <Layout>
-      <Hero>
+      <Hero className="on-hero">
         <StaticImage
           src="../images/artysci-hero.png"
           alt="Artyści"

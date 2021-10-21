@@ -56,6 +56,9 @@ p {
   line-height: 20px;
   font-size: 14px;
 }
+button {
+  cursor: pointer;
+}
 .font-italy {
   font-family: "Playfair Display", serif;
 }
@@ -162,9 +165,6 @@ p {
   border: 1px solid #c2a353;
   top: 26px;
 }
-.home-about.about-border {
-  margin-top: -100px;
-}
 .films-wrapper {
   padding: 0px 30px;
   position: relative;
@@ -270,7 +270,8 @@ p {
 }
 .about-second,
 .opinions,
-.spotify {
+.spotify,
+.atractions {
   padding: 0 30px;
   margin-bottom: 45px;
 }
@@ -309,6 +310,51 @@ p {
 }
 .opinions ul.slick-dots {
   bottom: 0;
+}
+.film {
+  position: relative;
+}
+
+.film-icons {
+  position: absolute;
+  right: -30px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: calc(50% + 30px);
+}
+
+.film-icons button {
+  margin: 15px 0;
+  position: static;
+  width: 100%;
+  transform: none;
+}
+.bg-none.about-text:after {
+  display: none;
+}
+.on-hero {
+  margin-bottom: -185px;
+}
+.attractions-item p {
+  max-width: 287px;
+}
+h4 {
+  font-size: 25px;
+  line-height: 35px;
+  font-weight: 700;
+}
+
+.attractions-item h4 {
+  margin-top: 40px;
+  margin-bottom: 0;
+}
+
+.attractions-item svg {
+  margin-top: 35px;
+  margin-bottom: 37px;
+}
+.attractions-item {
+  margin-bottom: 70px;
 }
 @media (min-width: 992px) {
   .line-before:after {
@@ -426,15 +472,12 @@ p {
     padding-top: 75px;
   }
 
-  .home-about.about-border {
-    margin-top: -480px;
-  }
-
   .hero-title.subpage {
     top: 223px;
     transform: none;
   }
-  .about-second {
+  .about-second,
+  .atractions {
     display: flex;
     padding: 0 45px;
     margin-bottom: 170px;
@@ -472,9 +515,6 @@ p {
     padding: 52px 48px;
     border: 1px solid #c2a353;
   }
-  section.home-about.about-border.art {
-    margin-top: -317px;
-  }
 
   .art .about-img {
     width: 50%;
@@ -504,4 +544,46 @@ p {
   .art.home-about:after {
     top: 100px;
   }
+  .films-title.about-text p {
+    max-width: 500px;
+  }
+
+  .films-title.about-text {
+    max-width: initial;
+  }
+  .bg-none.about-text:after {
+    display: none;
+  }
+
+  .film {
+    position: relative;
+  }
+
+  .film-icons {
+    position: absolute;
+    right: -45px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: auto;
+  }
+
+  .film-icons button {
+    margin: 45px 0;
+  }
+  .on-hero {
+    margin-bottom: -167px;
+  }
+  .attractions-item {
+    width: 25%;
+  }
+  .attractions-item p {
+    max-width: 287px;
+}
+
+.atractions {
+    gap: 20px;
+}
+.attractions-item {
+  margin-bottom: 0px;
+}
 }

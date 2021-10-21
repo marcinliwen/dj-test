@@ -9,8 +9,8 @@ export default function Navbar() {
         <ul>
         <li><Link to="/o-mnie">O MNIE</Link></li>           
         <li><Link to="/artysci">ARTYŚCI</Link></li>          
-        <li><a>OFERTA</a></li>           
-        <li><a>ATRAKCJE</a></li>           
+        <li><Link to="/oferta">OFERTA</Link></li>           
+        <li><Link to="/atrakcje">ATRAKCJE</Link></li>           
         <li><a>ZDJĘCIA I FILMY</a></li>
         <li><a>FAQ</a></li>           
         <li><a>KONTAKT</a></li>          

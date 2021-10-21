@@ -14,7 +14,7 @@ import Spotify from "../assets/spotify.svg"
 const Omnie = () => {
   return (
     <Layout>
-      <Hero>
+      <Hero className="on-hero">
         <StaticImage
           src="../images/hero-about.png"
           alt="O mnie"
