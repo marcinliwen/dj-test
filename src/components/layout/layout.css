@@ -271,11 +271,16 @@ button {
 .about-second,
 .opinions,
 .spotify,
-.atractions {
+.atractions,
+.picture,
+.movies {
   padding: 0 30px;
   margin-bottom: 45px;
 }
-
+.picture{
+  position: relative;
+  z-index: 1;
+}
 .about-second .about-text:after {
   display: none;
 }
@@ -355,6 +360,23 @@ h4 {
 }
 .attractions-item {
   margin-bottom: 70px;
+}
+.gallery-wrapper div {
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.gallery-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+}
+@media (min-width: 414px){
+  .gallery-wrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    gap: 20px;
+  }
 }
 @media (min-width: 992px) {
   .line-before:after {
@@ -482,6 +504,11 @@ h4 {
     padding: 0 45px;
     margin-bottom: 170px;
   }
+  .picture,
+.movies{
+  padding: 0 45px;
+    margin-bottom: 80px;
+}
   .spotify {
     display: flex;
     padding: 0 45px;
@@ -586,4 +613,15 @@ h4 {
 .attractions-item {
   margin-bottom: 0px;
 }
+.gallery-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  gap: 20px;
+}
+.gallery-wrapper div {
+  margin-bottom: 0px;
+}
+
+
 }

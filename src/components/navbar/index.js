@@ -11,7 +11,7 @@ export default function Navbar() {
         <li><Link to="/artysci">ARTYŚCI</Link></li>          
         <li><Link to="/oferta">OFERTA</Link></li>           
         <li><Link to="/atrakcje">ATRAKCJE</Link></li>           
-        <li><a>ZDJĘCIA I FILMY</a></li>
+        <li><Link to="/zdjecia-i-filmy">ZDJĘCIA I FILMY</Link></li>
         <li><a>FAQ</a></li>           
         <li><a>KONTAKT</a></li>          
         <li><a>BLOG</a></li>          

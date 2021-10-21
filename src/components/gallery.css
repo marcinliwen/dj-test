@@ -1,0 +1,34 @@
+@import "~react-image-gallery/styles/css/image-gallery.css";
+
+.image-gallery {  
+    margin-top: auto;
+    margin-bottom: auto;
+}
+.image-gallery-thumbnail.active, .image-gallery-thumbnail:hover, .image-gallery-thumbnail:focus {
+    outline: none;
+    border: 4px solid #C2A353;
+}
+.MuiPaper-root {
+    background: #000!important;
+}
+.close-btn {
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    z-index: 10;
+}
+.close-btn svg{
+    fill: #fff;
+}
+@media (min-width: 992px){
+    .image-gallery-icon, .close-btn{
+        transition: all .3s ease-out;
+    }
+    .image-gallery-icon:hover {
+        color: #C2A353;
+    }
+    .close-btn:hover svg {
+        fill: #C2A353;
+        transform: scale(1.1);
+    }
+}
