@@ -1,0 +1,36 @@
+.faq-wrapper .faq-body .row-title-text{
+    padding-left: 28px;
+    padding-right: 0px;
+    font-size: 25px;
+    line-height: 36px;
+    font-weight: 700;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-in-out;
+}
+.faq-wrapper .faq-body .expanded .row-title-text{
+    color: #C2A353;
+}
+.faq-wrapper .faq-body .row-title .icon-wrapper{
+    left: 0;
+    right: auto!important;
+    top: 38px!important;
+}
+.faq-wrapper .faq-row .row-content-text{
+    padding-left: 28px!important;
+    font-weight: 400!important;
+    font-size: 14px!important;
+    line-height: 20px!important;
+}
+.icon-wrapper svg{
+    width: 15px;
+}
+.icon-wrapper svg path{
+    fill: #C2A353
+}
+.faq-wrapper .faq-body .faq-row{
+    border-bottom: 1px solid #464646;
+    padding: 21px 0px;
+}
+.faq-wrapper .faq-body .faq-row:nth-child(1){
+    border-top: 1px solid #464646;
+}

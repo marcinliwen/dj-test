@@ -16,40 +16,6 @@ import ImageGallery from "react-image-gallery";
 import "../components/gallery.css";
 import Close from "../assets/close.svg";
 import Video from "../components/video";
-const images = [
-  {
-    original: "../images/gallery-1.png",
-    //thumbnail: '',
-  },
-  {
-    original: "../images/gallery-2.png",
-    //thumbnail: '',
-  },
-  {
-    original: "../images/gallery-3.png",
-    //thumbnail: '',
-  },
-  {
-    original: "../images/gallery-4.png",
-    //thumbnail: '',
-  },
-  {
-    original: "../images/gallery-1.png",
-    //thumbnail: '',
-  },
-  {
-    original: "../images/gallery-2.png",
-    //thumbnail: '',
-  },
-  {
-    original: "../images/gallery-3.png",
-    //thumbnail: '',
-  },
-  {
-    original: "../images/gallery-4.png",
-    //thumbnail: '',
-  },
-];
 
 const Transition = React.forwardRef(function Transition(props, ref) {
   return <Slide direction="up" ref={ref} {...props} />;
