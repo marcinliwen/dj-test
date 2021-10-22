@@ -57,7 +57,7 @@ height:100vh
         position: relative;
     }
     .hero-title.home {
-        margin-top: 315px;
+        margin-top: 50vh;
     }
     .more-wrapper {
         width: auto;

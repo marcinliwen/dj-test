@@ -25,7 +25,7 @@ const IndexPage = () => {
           />      
         <Header pageName="home"  />
         <div className="hero-title home">
-          <h2>Muzyczne doświadczenia</h2>
+          <h2>Muzyczne<br/>doświadczenia</h2>
           <h3 className="line-before">w każdym stylu</h3>
           <div className="more-wrapper">
             <button className="line-after" onClick={() => scrollTo('#about')}><Mouse fill="#C2A353"/> <span>Dowiedz się więcej</span></button>
