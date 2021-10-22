@@ -7,7 +7,7 @@
     margin-bottom: 20px;
 }
 
-.play-film.line-before, .play-film.line-after {
+.video .play-film.line-before, .video .play-film.line-after {
     left:auto;
     right: auto;
     top: auto;
