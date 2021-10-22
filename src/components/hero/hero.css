@@ -12,8 +12,9 @@ height:100vh
    
 }
 .hero-title.home {
-    margin-top: 315px;
+    margin-top: 40vh;
 }
+
 .gatsby-image-wrapper.hero {
     height: 100vh;
     position: absolute;
@@ -27,7 +28,7 @@ height:100vh
     position: absolute;
     bottom: 10%;
     right: 0;
-    width: 50%;
+    width: 54%;
 }
 .more-wrapper svg path {
     fill: #C2A353;
@@ -54,6 +55,9 @@ height:100vh
     .hero-title{
         padding: 0 45px;
         position: relative;
+    }
+    .hero-title.home {
+        margin-top: 315px;
     }
     .more-wrapper {
         width: auto;
