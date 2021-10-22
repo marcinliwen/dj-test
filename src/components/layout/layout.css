@@ -14,6 +14,9 @@ body {
   background: #000;
   color: #fff;
 }
+body.menu-open {
+  overflow: hidden;
+}
 input,
 textarea {
   -webkit-appearance: none;

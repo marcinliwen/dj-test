@@ -46,7 +46,50 @@ header {
     background: #C2A353;
 }
 
-
+.menu-wrapper{
+    background: #000;
+    box-shadow: 3px 0 8px rgb(0 0 0 / 35%);
+    height: 100%;
+    justify-content: flex-end;
+    left: 0;
+    opacity: 0;
+    overflow-y: auto;
+    padding: 46px 15px 15px;
+    position: fixed;
+    top: 0;
+    transition-duration: .4s;
+    visibility: hidden;
+    width: 100%;
+    z-index: 999;
+    z-index: -10;
+}
+.menu-wrapper.open{
+    opacity: 1;
+    transition-duration: .4s;
+    visibility: visible;
+    z-index: 1000;
+}
+.menu-back{
+    background: #000;
+    bottom: 0;
+    left: 0;
+    opacity: 0;
+    position: fixed;
+    top: 0;
+    transition-duration: .4s;
+    visibility: hidden;
+    width: 100%;
+    z-index: -1;
+}
+.menu-wrapper nav ul {
+    display: block;
+}
+.menu-wrapper .social {
+    display: flex;
+    position: static;
+    justify-content: center;
+    margin-top: 45px;
+}
 @media (min-width: 992px){
     .menu-burger {
         overflow: hidden;
