@@ -13,7 +13,7 @@ import Play from "../assets/Play.svg";
 const Atrakcje = () => {
   return (
     <Layout>
-      <Hero className="on-hero">
+      <Hero className="">
         <StaticImage
           src="../images/hero-atrakcje.png"
           alt="Atrakcje"
@@ -34,7 +34,6 @@ const Atrakcje = () => {
             alt="Fotobudka"
             placeholder="blurred"
             layout="fullWidth"
-            className="hero"
           />
 
           <h4>Fotobudka</h4>
@@ -54,7 +53,6 @@ const Atrakcje = () => {
             alt="Ciężki dym"
             placeholder="blurred"
             layout="fullWidth"
-            className="hero"
           />
 
           <h4>Ciężki dym</h4>
@@ -74,7 +72,6 @@ const Atrakcje = () => {
             alt="Napis LOVE"
             placeholder="blurred"
             layout="fullWidth"
-            className="hero"
           />
 
           <h4>Napis LOVE</h4>
@@ -94,7 +91,6 @@ const Atrakcje = () => {
             alt="Dekoracja światłem"
             placeholder="blurred"
             layout="fullWidth"
-            className="hero"
           />
 
           <h4>Dekoracja światłem</h4>

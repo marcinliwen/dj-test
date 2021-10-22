@@ -55,7 +55,7 @@ const ZdjeciaiFilmy = () => {
 
   return (
     <Layout>
-      <Hero className="on-hero">
+      <Hero className="">
         <StaticImage
           src="../images/hero-zdjecia.png"
           alt="Zdjęcia i filmy"

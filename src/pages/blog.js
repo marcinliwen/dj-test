@@ -9,7 +9,7 @@ import Arrow from "../assets/Arrow1.svg"
 const Blog = () => {
   return (
     <Layout>
-      <Hero className="on-hero blog">
+      <Hero className="">
         <StaticImage
           src="../images/hero-blog.png"
           alt="Blog"

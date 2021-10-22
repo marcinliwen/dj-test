@@ -14,7 +14,7 @@ import Gallery from "../assets/Gallery.svg"
 const Oferta = () => {
   return (
     <Layout>
-      <Hero className="on-hero">
+      <Hero className="">
         <StaticImage
           src="../images/oferta-hero.png"
           alt="Oferta"

@@ -12,7 +12,7 @@ import "../components/contactform/contactform.css";
 const Kontakt = () => {
     return(
         <Layout>
-            <Hero className="on-hero kontakt">
+            <Hero className="">
         <StaticImage
           src="../images/hero-kontakt.png"
           alt="Kontakt"

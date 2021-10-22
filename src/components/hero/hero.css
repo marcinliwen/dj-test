@@ -1,21 +1,33 @@
 .hero-wrapper{
     position: relative;
+    padding-top: 32px;
+    padding-bottom: 160px;
+}
+.hero-wrapper.home{
+height:100vh
 }
 .hero-title {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
     padding: 0 30px;
+    margin-top: 180px;
+   
+}
+.hero-title.home {
+    margin-top: 315px;
 }
 .gatsby-image-wrapper.hero {
     height: 100vh;
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    top: 0;
+    left: 0;
 }
 .more-wrapper {
     padding: 0 30px 0 0;
     position: absolute;
-    bottom: 20%;
-    width: calc(50% + 12px);
+    bottom: 10%;
     right: 0;
+    width: 50%;
 }
 .more-wrapper svg path {
     fill: #C2A353;
@@ -41,6 +53,7 @@
     }
     .hero-title{
         padding: 0 45px;
+        position: relative;
     }
     .more-wrapper {
         width: auto;

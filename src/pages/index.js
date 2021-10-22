@@ -15,7 +15,7 @@ import scrollTo from 'gatsby-plugin-smoothscroll';
 const IndexPage = () => {
   return (
     <Layout>
-      <Hero>  
+      <Hero className="home">  
         <StaticImage 
           src='../images/hero-home.png'
           alt="A dinosaur"
@@ -24,13 +24,14 @@ const IndexPage = () => {
           className="hero"
           />      
         <Header pageName="home"  />
-        <div className="hero-title">
+        <div className="hero-title home">
           <h2>Muzyczne doświadczenia</h2>
           <h3 className="line-before">w każdym stylu</h3>
+          <div className="more-wrapper">
+            <button className="line-after" onClick={() => scrollTo('#about')}><Mouse fill="#C2A353"/> <span>Dowiedz się więcej</span></button>
+          </div>
         </div>
-        <div className="more-wrapper">
-          <button className="line-after" onClick={() => scrollTo('#about')}><Mouse fill="#C2A353"/> <span>Dowiedz się więcej</span></button>
-        </div>
+        
       </Hero>
       <section id="about" className="home-about">
         <div className="about-img">
