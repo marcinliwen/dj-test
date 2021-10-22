@@ -9,6 +9,7 @@ import { StaticImage } from "gatsby-plugin-image";
 import Mouse from "../assets/Mouse.svg"
 import Arrow from '../assets/Arrow1.svg';
 import Play from "../assets/Play.svg"
+import scrollTo from 'gatsby-plugin-smoothscroll';
 
 // markup
 const IndexPage = () => {
@@ -28,7 +29,7 @@ const IndexPage = () => {
           <h3 className="line-before">w każdym stylu</h3>
         </div>
         <div className="more-wrapper">
-          <button className="line-after"><Mouse fill="#C2A353"/> <span>Dowiedz się więcej</span></button>
+          <button className="line-after" onClick={() => scrollTo('#about')}><Mouse fill="#C2A353"/> <span>Dowiedz się więcej</span></button>
         </div>
       </Hero>
       <section id="about" className="home-about">

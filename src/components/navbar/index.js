@@ -13,9 +13,9 @@ export default function Navbar() {
         <li><Link to="/atrakcje">ATRAKCJE</Link></li>           
         <li><Link to="/zdjecia-i-filmy">ZDJĘCIA I FILMY</Link></li>
         <li><Link to="/faq">FAQ</Link></li>           
-        <li><a>KONTAKT</a></li>          
-        <li><a>BLOG</a></li>          
-        <li><a>STREFA KLIENTA</a></li>
+        <li><Link to="/kontakt">KONTAKT</Link></li>          
+        <li><Link to="/blog">BLOG</Link></li>          
+        <li><Link to="/">STREFA KLIENTA</Link></li>
         </ul>
     </nav>
   )
