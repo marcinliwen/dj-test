@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&family=Poppins:wght@400;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&family=Poppins:wght@300;400;600;700&display=swap");
 
 * {
   box-sizing: border-box;
@@ -274,11 +274,13 @@ button {
 .atractions,
 .picture,
 .movies,
-.faq-wrapper {
+.faq-wrapper, 
+.kontakt-wrapper {
   padding: 0 30px;
   margin-bottom: 45px;
 }
-.picture{
+.picture,
+.kontakt-wrapper{
   position: relative;
   z-index: 1;
 }
@@ -370,6 +372,20 @@ h4 {
 .gallery-wrapper {
   display: flex;
   flex-wrap: wrap;
+}
+.kontakt-wrapper .contact-data-nums {
+  font-size: 25px;
+  font-weight: 300;
+  line-height: 35px;
+  text-transform: initial;
+}
+
+.kontakt-wrapper .contsct-data-icons {
+  margin: 25px 0 32px;
+}
+
+.kontakt-wrapper .contact-data-name h4 {
+  margin: 0;
 }
 @media (min-width: 414px){
   .gallery-wrapper{
@@ -510,7 +526,7 @@ h4 {
   padding: 0 45px;
     margin-bottom: 80px;
 }
-  .spotify {
+  .spotify, .kontakt-wrapper {
     display: flex;
     padding: 0 45px;
     margin-bottom: 170px;
@@ -627,6 +643,25 @@ h4 {
 .gallery-wrapper div {
   margin-bottom: 0px;
 }
+.kontakt-form .form {
+  margin: 0;
+  padding:0;
+}
+.kontakt-form {
+  padding: 70px 112px;
+  border: 12px solid #C2A353;
+}
 
-
+.kontakt-wrapper .contact-data {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.on-hero.kontakt {
+  margin-bottom: -413px;
+}
+.on-hero.faq {
+  margin-bottom: -265px;
+}
 }

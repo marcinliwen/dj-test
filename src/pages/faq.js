@@ -12,7 +12,7 @@ import FaqInfo from "../components/faqinfo"
 const Faq = () =>{
     return(
         <Layout>
-            <Hero className="on-hero">
+            <Hero className="on-hero faq" >
         <StaticImage
           src="../images/hero-faq.png"
           alt="FAQ"

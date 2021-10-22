@@ -1,19 +1,35 @@
-import React from "react";
-import "./contactform.css";
-import Mail from "../../assets/Mail.svg";
-import Phone from "../../assets/Phone.svg";
-import Arrow from "../../assets/Arrow1.svg"
+import * as React from "react";
+import Layout from "../components/layout";
+import Header from "../components/header";
+import Hero from "../components/hero";
+import { StaticImage } from "gatsby-plugin-image";
+import Mail from "../assets/Mail.svg";
+import Phone from "../assets/Phone.svg";
+import Arrow from "../assets/Arrow1.svg"
+import "../components/contactform/contactform.css";
 
-export default function Contactform() {
-  return (
-    <div className="from-wrapper">
-      <div className="form-title">
-        <h2>Masz pytania?</h2>
-        <h3 style={{ color: "#fff" }} className="line-before">skontaktuj się z nami</h3>
-      </div>
-      <div className="contact-data">
+
+const Kontakt = () => {
+    return(
+        <Layout>
+            <Hero className="on-hero kontakt">
+        <StaticImage
+          src="../images/hero-kontakt.png"
+          alt="Kontakt"
+          placeholder="blurred"
+          layout="fullWidth"
+          className="hero"
+        />
+        <Header pageName="home" />
+        <div className="hero-title subpage">
+          <h2>Masz pytania?</h2>
+          <h3 className="line-before">skontaktuj się z nami</h3>
+        </div>
+      </Hero>
+<section className="kontakt-wrapper">
+    <div className="contact-data">
         <div className='contact-data-name'>
-          <p>Piotr Szymański</p>
+          <h4>Piotr Szymański</h4>
         </div>
         <div className="contsct-data-icons">
           <Mail /> <Phone />
@@ -23,6 +39,7 @@ export default function Contactform() {
           <div>E-mail: kontakt@piotrszymanski.pl</div>
         </div>
       </div>
+      <div className="kontakt-form">
       <form className="form">
           <div className="form-item">
               <input id="name"  name="name" type="text" placeholder="Imię i nazwisko"/>
@@ -46,6 +63,10 @@ export default function Contactform() {
               <input id="submit" type="submit" value="wyślij"/><Arrow />
           </div>
       </form>
-    </div>
-  );
+      </div>
+</section>
+        </Layout>
+    )
 }
+
+export default Kontakt;
