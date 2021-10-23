@@ -8,6 +8,7 @@ module.exports = {
     "gatsby-plugin-smoothscroll",
     "gatsby-plugin-react-helmet",
     "gatsby-plugin-sitemap",
+    "gatsby-plugin-minify",
     {
       resolve: "gatsby-plugin-manifest",
       options: {
