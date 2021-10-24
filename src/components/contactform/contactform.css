@@ -114,6 +114,9 @@
         align-items: center;
         position: relative;
         margin-bottom: 100px;
+        max-width: 1440px;
+        margin-left: auto;
+        margin-right: auto;
     }
     .form{
         margin-right: 111px;
@@ -128,6 +131,11 @@
         left: 160px;
         z-index: -1;
         border: solid 12px #C2A353;
+    }
+    .from-wrapper .line-before:after{
+        width: 1000px;
+        left: auto;
+        right: calc(100% + 45px);
     }
     .contact-data {
         margin-top: 0px;

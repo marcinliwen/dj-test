@@ -48,6 +48,9 @@
     max-width: 100%;
     width:100%;
     opacity:0;
+    visibility: hidden;
+
+
 }
 .video.play .video-cover {
     opacity: 0;
@@ -59,7 +62,8 @@
     visibility: hidden;
 }
 .video.play .video-frame{
-    opacity:1
+    opacity:1;
+    visibility: visible;
 }
 @media(min-width: 992px){
     .movies-wrapper{
